@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Content/css/trangchu.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Content/Cowlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/Content/owlcarousel/assets/owl.theme.default.min.css">
+    <script src="/Content/jquery.min.js"></script>
+    <script src="/Content/owlcarousel/owl.carousel.min.js"></script>
+    <title>ĐT-Coffee</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-logo" href="#">
+                <img src="/Content/image/logodat.png" alt="logo" height="100px">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarreponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarreponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="@Url.Action("TrangChu", "Home")">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("DatBan", "Home")">Đặt Bàn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Menu", "Home")">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("TuyenDung", "Home")">Tuyển Dụng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Login", "Home")">Login</a>
+                    </li>
+                    @Html.Action("GioHangPartial", "GioHang")
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    @RenderBody()
+
+    <div class="container-fluid">
+        <footer>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <img src="/Content/image/logodat.png" height="200px">
+                    <h3>DATTHUC.COFFEE</h3>
+                    <div class="row">
+                        <div class="col md-4"></div>
+                        <div class="col-md-4">
+                            <i class="fa fa-map-marker fa-map-marker-sm" aria-hidden="true"></i>
+                            <span class="text"> 236 Hoàng Quốc Việt - Từ Liêm - Hà Nội</span> <br>
+                            <i class="fa fa-phone fa-phone-sm" aria-hidden="true"></i>
+                            <span class="text">Hotline: 0123456789</span> <br>
+                            <i class="fa fa-envelope fa-envelope-sm" aria-hidden="true"></i>
+                            <span class="text">Email: coffee.mta@gmail.edu.vn</span><br>
+                        </div>
+                        <div class="col md-4"></div>
+                    </div>
+                    <div class="col-12 social padding">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <hr>
+                    <p>
+                        Copyright © 2020 The Coffee House. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

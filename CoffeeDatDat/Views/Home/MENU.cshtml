@@ -1,0 +1,140 @@
+﻿
+@{
+    ViewBag.Title = "MENU";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using CoffeeDatDat.Models
+@model IEnumerable<Mon> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/Content/css/Menu.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Content/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/Content/owlcarousel/assets/owl.theme.default.min.css">
+    <script src="/Content/jquery.min.js"></script>
+    <script src="/Content/owlcarousel/owl.carousel.min.js"></script>
+    <title>ĐT-Coffee</title>
+</head>
+<body>
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            })
+        });
+    </script>
+
+    <div class="container padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h3 class="display-5">Món Ưa Chuộng</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center">
+        <div class="owl-carousel owl-theme">
+            @foreach (Mon it in Model.Where(x => x.MaLoaiMon == "2"))
+            {
+            <div class="item">
+                <img src="~/Content/image/menu/mon_noi_bat/@it.HinhAnh" alt="">
+                <p class="pictrue-title">@it.TenMon</p>
+                <p class="pictrue-money">@it.DonGia<u>đ</u></p>
+                <button type="button" class="btn btn-secondary"><a href="@Url.Action("ThemGioHang", "GioHang",new {@MaMon = it.MaMon, @strURL = Request.Url.ToString() })">Add To Card</a></button>
+            </div>
+            }
+        </div>
+    </div>
+    <div class="container padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <hr>
+                <h3 class="display-5">Coffee</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center">
+        <div class="owl-carousel owl-theme">
+            @foreach (Mon it in Model.Where(x => x.MaLoaiMon == "1"))
+            {
+            <div class="item">
+                <img src="~/Content/image/menu/coffee/@it.HinhAnh" alt="">
+                <p class="pictrue-title">@it.TenMon</p>
+                <p class="pictrue-money">@it.DonGia<u>đ</u></p>
+                <button type="button" class="btn btn-secondary"><a href="@Url.Action("ThemGioHang", "GioHang",new {@MaMon = it.MaMon, @strURL = Request.Url.ToString() })">Add To Card</a></button>
+            </div>
+            }
+        </div>
+    </div>
+    <div class="container padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <hr>
+                <h3 class="display-5">Trà & Macchiato</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center">
+        <div class="owl-carousel owl-theme">
+            @foreach (Mon it in Model.Where(x => x.MaLoaiMon == "3"))
+            {
+            <div class="item">
+                <img src="~/Content/image/menu/tra&macchiato/@it.HinhAnh" alt="">
+                <p class="pictrue-title">@it.TenMon</p>
+                <p class="pictrue-money">@it.DonGia<u>đ</u></p>
+                <button type="button" class="btn btn-secondary"><a href="@Url.Action("ThemGioHang", "GioHang",new {@MaMon = it.MaMon, @strURL = Request.Url.ToString() })">Add To Card</a></button>
+            </div>
+            }
+        </div>
+    </div>
+    <div class="container padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <hr>
+                <h3 class="display-5">Bánh & Snack</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center">
+        <div class="owl-carousel owl-theme">
+            @foreach (Mon it in Model.Where(x => x.MaLoaiMon == "4"))
+            {
+            <div class="item">
+                <img src="~/Content/image/menu/banh&snack/@it.HinhAnh" alt="">
+                <p class="pictrue-title">@it.TenMon</p>
+                <p class="pictrue-money">@it.DonGia<u>đ</u></p>
+                <button type="button" class="btn btn-secondary"><a href="@Url.Action("ThemGioHang", "GioHang",new {@MaMon = it.MaMon, @strURL = Request.Url.ToString() })">Add To Card</a></button>
+            </div>
+            }
+        </div>
+    </div>
+
+</body>
+
+</html>
+

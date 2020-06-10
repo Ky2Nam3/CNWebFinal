@@ -1,0 +1,186 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    font-family: 'Caveat';
+    color: #222;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgb(233, 230, 225);
+}
+.navbar{
+    background-color: black;
+    top: 0px !important;
+}
+.navbar img{
+    padding-left: 100px;
+    color: white;
+}
+.navbar-toggler{
+    border-color: white;
+}
+.navbar ul li a i{
+    padding-top: 25px;
+}
+.navbar li a{
+    color: white !important;
+    margin-left: 10px;
+    transition: border-bottom 0.4s;
+}
+.navbar li a:hover{
+    color: rgb(232, 235, 51) !important;
+    border-bottom:2px solid rgb(241, 241, 106);
+}
+.social a{
+    font-size: 2em; /* 1em = 16px */
+    padding: 1rem; /* 1rem = 1 font-size*/
+}
+.social a i:hover{
+    transform: scale(1.3);
+}
+.social a i{
+    transition: all .2s;
+    cursor: pointer;
+}
+.fa{
+    width: 40px;
+    font-size: 18px;
+    padding-top: 2px;
+    color: white;
+}
+.fa-facebook{
+    color: #3b5998;
+}
+.fa-twitter{
+    color: #00aced;
+}
+.fa-google-plus-g{
+    color: #dd4b39;
+}
+.fa-instagram{
+    color: #517fa4;
+}
+.fa-youtube{
+    color: #bb0000;
+}
+footer{
+    background-color: black;
+    color: white;
+}
+footer hr{
+    border-top: 1px solid white;
+    width: 50%;
+}
+
+.menu{
+    width: auto; 
+    height: 300px; 
+    background-color: indianred;
+
+}
+.anhtop{
+    width: auto; 
+    height: 300px; 
+    /* background-color: lawngreen;  */
+    background-image: url(thaydoi1.jpg);
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat; 
+
+}
+
+.trinhbay{
+    padding-top: 100px;
+ width: auto; 
+ height: auto; 
+ /* background-color: #f5f5f5;  */
+ background-color: rgb(255, 246, 228);
+ justify-content: space-between;   
+}
+.noidung{
+    width: auto; 
+    height: auto; 
+    display: flex; 
+    /* background-color: lightpink; */
+    justify-content: space-between;
+}
+.mid{
+    width: 20%; 
+    height: auto;
+    /* background-color: magenta; */
+}
+.left{
+    width: 20%; 
+    height: auto;
+    /* background-color: maroon; */
+    margin-left: 150px;
+    
+}
+.right{
+    width: 20%; 
+    height: auto;
+    /* background-color: mediumblue; */
+    margin-right: 150px;
+    
+}
+.item{
+   
+    width: 330px; 
+    height: 375px;
+   background-color: white;
+    text-align: center; 
+}
+.item .item_img {
+    /* height: 200px; 
+    width: 200px;  */
+    vertical-align: middle;
+    /* text-align: center;
+} */
+}
+img.item_infor {
+    width: 300px; 
+    height: 75px; 
+    justify-content: none; 
+   
+    /* text-align: center; */
+
+} 
+.thongtin{
+    width: 330px; 
+    height: 75px; 
+    font-size: 16px;
+    text-align: center;
+    color: rgb(31, 30, 30);
+    font-family: segoe UI light  ;
+    text-align: center;
+    /* background-color: black; */
+}
+
+.chitiet button {
+
+    color: orangered ;
+    font-family: arial bold ;
+    text-transform: uppercase;
+}
+.ten a {
+    justify-content: none ;
+    text-decoration: none;
+    color: black;
+    font-family: segoe UI light bold ;
+}
+.chitiet a {
+     text-decoration: none; 
+     background-color: orangered; 
+     color: white;
+     font-family: arial bold ;
+     padding: 7px 15px ;
+     font-size: 12px;
+     border-radius: 7px;   
+     transition: color 0.5s , background 0.5s ;
+}
+
+
+
+
+

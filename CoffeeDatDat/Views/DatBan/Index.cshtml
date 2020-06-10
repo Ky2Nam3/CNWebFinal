@@ -1,0 +1,66 @@
+﻿
+@{
+    Layout = null;
+}
+
+@using CoffeeDatDat.Models
+@model IEnumerable<DATBAN>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>LoadKhachHang</title>
+</head>
+<body>
+    <div class="content">
+
+        <div class="module">
+            <div class="module-head">
+                <h3>Tables</h3>
+            </div>
+            <div class="module-body">
+                <table class="table table-striped table-bordered table-condensed">
+                    <thead>
+                        <tr>
+                            <th>Mã khách hàng</th>
+                            <th>Họ Tên</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (DATBAN it in Model)
+                        {
+                            if (it.TrangThai == true)
+                            {
+                            <tr>
+
+                                <td>@it.MaBan</td>
+                                <td>@it.TenBan</td>                              
+                            </tr>
+                            }
+                            else
+                                    {
+                            <tr>
+
+                                <td>@it.MaBan</td>
+                                <td>@it.Ngay</td>
+                            </tr> 
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="module-head">
+                <h3></h3>
+            </div>
+        </div>
+
+
+
+        <br />
+
+    </div><!--/.content-->
+</body>
+</html>
+

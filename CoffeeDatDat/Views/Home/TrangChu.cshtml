@@ -1,0 +1,208 @@
+﻿
+@{
+    ViewBag.Title = "DatBan";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using CoffeeDatDat.Models
+@model IEnumerable<Mon>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Content/css/trangchu.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Content/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/Content/owlcarousel/assets/owl.theme.default.min.css">
+    <script src="/Content/jquery.min.js"></script>
+    <script src="/Content/owlcarousel/owl.carousel.min.js"></script>
+    <title>ĐT-Coffee</title>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            })
+        });
+    </script>
+
+    <div id="slides" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#slides" data-slide-to="0" class="active"></li>
+            <li data-target="#slides" data-slide-to="1"></li>
+            <li data-target="#slides" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/Content/image/menu/slide/slide1.jpg" alt="ảnh1">
+                <div class="carousel-caption">
+                    <h1>WelCome</h1>
+                    <h3>T-Coffee</h3>
+                    <h5>"Tập đoàn chuyên Coffee năng lượng-Coffee đổi đời"</h5>
+                    <button type="button" class="btn btn-warning"><a href="@Url.Action("DatBan", "Home")">Order Now</a></button>
+                    <button type="button" class="btn btn-outline-light"><a href="@Url.Action("Menu", "Home")">View Menu</a></button>
+                </div>
+            </div>
+            <div class="carousel-item ">
+                <img src="/Content/image/menu/slide/slide2.jpg" alt="ảnh3">
+                <div class="carousel-caption">
+                    <h1>T-Coffee</h1>
+                    <h3>The Energy Coffee Chains</h3>
+                    <h5>"Here at T-Coffee, we not only serve the best energy coffee but also dreams"</h5>
+                    <button type="button" class="btn btn-warning"><a href="@Url.Action("DatBan", "Home")">Order Now</a></button>
+                    <button type="button" class="btn btn-outline-light"><a href="@Url.Action("Menu", "Home")">View Menu</a></button>
+                </div>
+            </div>
+            <div class="carousel-item ">
+                <img src="/Content/image/menu/slide/slide3.jpg" alt="ảnh4">
+                <div class="carousel-caption">
+                    <h1>T-Coffee</h1>
+                    <h3>The Energy Coffee Chains</h3>
+                    <h5>
+                        “Ready to leave no stones unturned to create the world’s best masterpieces of coffee for
+                        creativity and success”
+                    </h5>
+                    <button type="button" class="btn btn-warning"><a href="@Url.Action("DatBan", "Home")">Order Now</a></button>
+                    <button type="button" class="btn btn-outline-light"><a href="@Url.Action("Menu", "Home")">View Menu</a></button>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#slides" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#slides" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <div class="welcome">
+        <hr>
+    </div>
+    <div class="container">
+
+        <div class="about-section py-5">
+            <div class="container py-xl-5 py-lg-3">
+                <h5 class="tittle-w3 text-dark text-center mb-4">Welcome</h5>
+                <div class="about-top text-center mb-5">
+                    <h3 class="subheading-wthree mb-2">A Few Words About Us</h3>
+                    <p class="para-w3l">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis tristique est, et egestas odio. Mauris ac tristique
+                        arcu, sed interdum risus.Integer quis tristique est, et egestas odio. Mauris ac tristique arcu, sed interdum risus.
+                    </p>
+                </div>
+                <div class="row about-main">
+                    <div class="col-lg-6 about-img">
+                        <img src="/Content/Home/images/about.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6 about-w3ls-right">
+                        <h3 class="subheading-wthree mb-2">We are popular in</h3>
+                        <p class="para-w3l">
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim quis nostrud, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <ul class="list-unstyled">
+                            <li class="mb-3 mt-4">
+                                <i class="fas fa-hand-point-right mr-3"></i>Sed do eiusmod tempor
+                            </li>
+                            <li class="mb-3">
+                                <i class="fa fa-hand-point-right mr-3"></i>Eaque ipsa quae illo
+                            </li>
+                            <li class="mb-3">
+                                <i class="fa fa-hand-point-right mr-3"></i>Magni dolores eos qui
+                            </li>
+                            <li>
+                                <i class="fa fa-hand-point-right mr-3"></i>Neque porro quism est
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="servies py-5" id="services">
+            <div class="container py-xl-5 py-lg-3">
+                <h5 class="tittle-w3 text-dark text-center mb-sm-5 mb-4">Services</h5>
+                <div class="d-flex skill_info_wthree_agile">
+                    <div class="col-md-4 banner_bottom_left">
+                        <div class="row">
+                            <div class="col-3 banner_bottom_grid_left text-center mb-3">
+                                <i class="fas fa-coffee"></i>
+                            </div>
+                            <div class="col-9 banner_bottom_grid_right mt-1 mb-4">
+                                <h3>Services 1</h3>
+                            </div>
+                            <p>Lorem ipsum dolor, consectetur adipiscing elit,morbi viverra lacus commodo felis semper.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 banner_bottom_left text-center mt-md-0 mt-3 mb-md-0 mb-5">
+                        <img src="/Content/Home/images/service.png" alt="" class="img-fluid">
+                        <div class="banner_bottom_grid_right mt-5 mb-2">
+                            <h3>Services 2</h3>
+                        </div>
+                        <p>Lorem ipsum dolor, consectetur adipiscing elit,morbi viverra lacus commodo felis semper.</p>
+                    </div>
+                    <div class="col-md-4 banner_bottom_left">
+                        <div class="row">
+                            <div class="col-3 banner_bottom_grid_left text-center mb-3">
+                                <i class="fas fa-glass-martini"></i>
+                            </div>
+                            <div class="col-9 banner_bottom_grid_right mt-1 mb-4">
+                                <h3>Services 3</h3>
+                            </div>
+                            <p>Lorem ipsum dolor, consectetur adipiscing elit,morbi viverra lacus commodo felis semper.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="row">
+            <div class="col-md-6">
+                <img src="/Content/image/menu/slide/banner.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <p class="baner-text">
+                    T- COFFEE xin gửi lời chào đến tất cả mọi người.
+                    T-Coffee là thương hiệu cà phê sạch độc quyền với slogan "TRUE COFFEE, TRUE TASTE".
+                    Tất cả các loại cà phê hạt đều được chúng tôi lựa chọn rất kỹ càng bằng tay,
+                    được bảo quản chu đáo và được các chuyên gia rang theo công thức riêng nhằm đảm bảo chất lượng độc
+                    đáo
+                    và toàn vị. Chúng tôi rất tự hào đã mang đến cho người tiêu dùng, đặc biệt là những tín đồ cà phê,
+                    những
+                    sản phẩm chất lượng cao nhưng giá cả rất hợp lý. T-Coffee đã có được 6 sản phẩm cà phê với 6 mùi,
+                    vị khác nhau để đáp ứng "GU" uống cà phê rất khác nhau của khách hàng...
+                </p>
+                <button class="btn btn-warning btn-sm"><a href="@Url.Action("HienThiTHem", "Home")">Hiển Thị Thêm</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

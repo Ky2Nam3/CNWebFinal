@@ -1,0 +1,110 @@
+﻿
+@{
+    ViewBag.Title = "UngTuyen";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Content/css/ungtuyen.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jqn.juery.mis"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Content/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/Content/owlcarousel/assets/owl.theme.default.min.css">
+    <script src="/Content/jquery.min.js"></script>
+    <script src="/Content/owlcarousel/owl.carousel.min.js"></script>
+    <title>ĐT-Coffee</title>
+</head>
+<body>
+
+    <div class="row slide">
+        <div class="col">
+            <div class="col-md-12 text-center">
+                <h3>the coffee house</h3>
+                <h4>Tầng 25, Tòa S1-236 Hoàng Quốc Việt - Từ Liêm - Hà Nội <br> <br> hotline: 0963966405</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="container padding">
+        <div class="container padding">
+            <div class="row welcome text-center">
+                <div class="col-12">
+                    <hr>
+                    <h3 class="display-5">Nộp đơn ứng tuyển công việc này</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row ungtuyen">
+            <div class="col-md-12">
+                <form action="">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label for="sel1">
+                                <h6 class="display-6">Họ Và Tên</h6>
+                            </label>
+                            <input type="text" data-val="true" data-val-length-max="50"
+                                   data-val-length="Không vượt quá 50 ký tự" class="form-control form-control-sm"
+                                   id="ung-tuyen-name" placeholder="họ và tên của bạn" name="text1">
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label for="sel1">
+                                <h6 class="display-6">Số Điện Thoại</h6>
+                            </label>
+                            <input type="text" data-val="true" data-val-length-max="20"
+                                   data-val-length="Không vượt quá 20 ký tự" class="form-control form-control-sm"
+                                   id="ung-tuyen-sdt" placeholder="số điện thoại của bạn" name="text2">
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label for="sel1">
+                                <h6 class="display-6">Email</h6>
+                            </label>
+                            <div class="input-group date">
+                                <input type="text" class="form-control form-control-sm" id="ung-tuyen-email"
+                                       placeholder="email của bạn" name="text3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label for="sel1">
+                                <h6 class="display-6">Vị Trí</h6>
+                            </label>
+                            <select class="form-control form-control-sm" id="dat-ban-so-nguoi" name="sellist1">
+                                <option>Nhân Viên Pha Chế</option>
+                                <option>Nhân Viên Phục Vụ</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <br> <br>
+                <hr>
+                <br>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+

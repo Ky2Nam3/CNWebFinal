@@ -1,0 +1,151 @@
+﻿
+@{
+    ViewBag.Title = "DatBan";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Content/css/DatBan.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Content/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/Content/owlcarousel/assets/owl.theme.default.min.css">
+    <script src="/Content/jquery.min.js"></script>
+    <script src="/Content/owlcarousel/owl.carousel.min.js"></script>
+    <title>ĐT-Coffee</title>
+</head>
+
+<body>
+    <div>
+        <div id="slides" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#slides" data-slide-to="0" class="active"></li>
+                <li data-target="#slides" data-slide-to="1"></li>
+                <li data-target="#slides" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/Content/image/menu/slide/slide1.jpg" alt="ảnh1">
+                    <div class="carousel-caption">
+                        <h1>WelCome</h1>
+                        <h3>T-Coffee</h3>
+                        <h5>"Tập đoàn chuyên Coffee năng lượng-Coffee đổi đời"</h5>
+                        <button type="button" class="btn btn-warning"><a href="@Url.Action("DatBan", "Home")">Order Now</a></button>
+                        <button type="button" class="btn btn-outline-light"><a href="@Url.Action("Menu", "Home")">View Menu</a></button>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="/Content/image/menu/slide/slide2.jpg" alt="ảnh3">
+                    <div class="carousel-caption">
+                        <h1>T-Coffee</h1>
+                        <h3>The Energy Coffee Chains</h3>
+                        <h5>"Here at T-Coffee, we not only serve the best energy coffee but also dreams"</h5>
+                        <button type="button" class="btn btn-warning"><a href="@Url.Action("DatBan", "Home")">Order Now</a></button>
+                        <button type="button" class="btn btn-outline-light"><a href="@Url.Action("Menu", "Home")">View Menu</a></button>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="/Content/image/menu/slide/slide3.jfif" alt="ảnh4">
+                    <div class="carousel-caption">
+                        <h1>T-Coffee</h1>
+                        <h3>The Energy Coffee Chains</h3>
+                        <h5>
+                            “Ready to leave no stones unturned to create the world’s best masterpieces of coffee for
+                            creativity and success”
+                        </h5>
+                        <button type="button" class="btn btn-warning"><a href="@Url.Action("DatBan", "Home")">Order Now</a></button>
+                        <button type="button" class="btn btn-outline-light"><a href="@Url.Action("Menu", "Home")">View Menu</a></button>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#slides" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#slides" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+
+    <div class="container padding">
+        <div class="container padding">
+            <div class="row welcome text-center">
+                <div class="col-12">
+                    <hr>
+                    <h3 class="display-5">Đặt Bàn</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row datban">
+            <div class="col-md-12">
+                <form action="">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label for="sel1">
+                                <h6 class="display-6">Họ Và Tên</h6>
+                            </label>
+                            <input type="text" data-val="true" data-val-length-max="50"
+                                   data-val-length="Không vượt quá 50 ký tự" class="form-control form-control-sm"
+                                   id="dat-ban-name" placeholder="*bắt buộc*" name="text1">
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label for="sel1">
+                                <h6 class="display-6">Số Điện Thoại</h6>
+                            </label>
+                            <input type="text" data-val="true" data-val-length-max="20"
+                                   data-val-length="Không vượt quá 20 ký tự" class="form-control form-control-sm"
+                                   id="dat-ban-sdt" placeholder="*bắt buộc*" name="text2">
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label for="sel1">
+                                <h6 class="display-6">Ngày</h6>
+                            </label>
+                            <div class="input-group date">
+                                <input type="text" class="form-control form-control-sm" id="dat-ban-ngay"
+                                       placeholder="*bắt buộc*" name="text3">
+                                <span class="input-group-addon">
+                                    <i class="glyphicon glyphicon-calendar"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label for="sel1">
+                                <h6 class="display-6">Số Người</h6>
+                            </label>
+                            <select class="form-control form-control-sm" id="dat-ban-so-nguoi" name="sellist1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>Trên 5 Người</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+
+
